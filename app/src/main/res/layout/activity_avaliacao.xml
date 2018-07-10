@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".Avaliacao">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data da Avaliação" />
+
+            <EditText
+                android:id="@+id/txtData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="dd/mm/aaaa"
+                android:inputType="date"
+                app:layout_constraintEnd_toEndOf="@+id/txtView88"
+                app:layout_constraintStart_toStartOf="@+id/txtView88"
+                app:layout_constraintTop_toBottomOf="@+id/txtView88" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Idade Atual"
+                app:layout_constraintEnd_toEndOf="@+id/txtData"
+                app:layout_constraintStart_toStartOf="@+id/txtData"
+                app:layout_constraintTop_toBottomOf="@+id/txtData" />
+
+            <EditText
+                android:id="@+id/txtAtual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="em anos"
+                android:inputType="numberDecimal"
+                app:layout_constraintEnd_toEndOf="@+id/textView8"
+                app:layout_constraintStart_toStartOf="@+id/textView8"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <TextView
+                android:id="@+id/Peso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Peso"
+                app:layout_constraintEnd_toEndOf="@+id/txtAtual"
+                app:layout_constraintStart_toStartOf="@+id/txtAtual"
+                app:layout_constraintTop_toBottomOf="@+id/txtAtual" />
+
+            <EditText
+                android:id="@+id/txtPeso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="em Kg"
+                android:inputType="numberDecimal"
+                app:layout_constraintEnd_toEndOf="@+id/Peso"
+                app:layout_constraintStart_toStartOf="@+id/Peso"
+                app:layout_constraintTop_toBottomOf="@+id/Peso" />
+
+            <TextView
+                android:id="@+id/Gordura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Gordura"
+                app:layout_constraintEnd_toEndOf="@+id/txtPeso"
+                app:layout_constraintStart_toStartOf="@+id/txtPeso"
+                app:layout_constraintTop_toBottomOf="@+id/txtPeso" />
+
+            <EditText
+                android:id="@+id/txtGordura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="em %"
+                android:inputType="numberDecimal"
+                app:layout_constraintEnd_toEndOf="@+id/Gordura"
+                app:layout_constraintStart_toStartOf="@+id/Gordura"
+                app:layout_constraintTop_toBottomOf="@+id/Gordura" />
+
+            <TextView
+                android:id="@+id/txtView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Músculo Esquelético"
+                app:layout_constraintEnd_toEndOf="@+id/txtGordura"
+                app:layout_constraintStart_toStartOf="@+id/txtGordura"
+                app:layout_constraintTop_toBottomOf="@+id/txtGordura" />
+
+            <EditText
+                android:id="@+id/txtMusculo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="em %"
+                android:inputType="numberDecimal"
+                app:layout_constraintEnd_toEndOf="@+id/txtView22"
+                app:layout_constraintStart_toStartOf="@+id/txtView22"
+                app:layout_constraintTop_toBottomOf="@+id/txtView22" />
+
+            <TextView
+                android:id="@+id/Visceral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Gordura Visceral"
+                app:layout_constraintEnd_toEndOf="@+id/txtMusculo"
+                app:layout_constraintStart_toStartOf="@+id/txtMusculo"
+                app:layout_constraintTop_toBottomOf="@+id/txtMusculo" />
+
+            <EditText
+                android:id="@+id/txtVisceral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="nível"
+                android:inputType="numberDecimal"
+                app:layout_constraintEnd_toEndOf="@+id/Visceral"
+                app:layout_constraintStart_toStartOf="@+id/Visceral"
+                app:layout_constraintTop_toBottomOf="@+id/Visceral" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Metabolismo Basal"
+                app:layout_constraintEnd_toEndOf="@+id/txtVisceral"
+                app:layout_constraintStart_toStartOf="@+id/txtVisceral"
+                app:layout_constraintTop_toBottomOf="@+id/txtVisceral" />
+
+            <EditText
+                android:id="@+id/txtMetabolismo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="em Kcal"
+                android:inputType="numberDecimal"
+                app:layout_constraintEnd_toEndOf="@+id/textView9"
+                app:layout_constraintStart_toStartOf="@+id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Idade Corporal"
+                app:layout_constraintEnd_toEndOf="@+id/txtMetabolismo"
+                app:layout_constraintStart_toStartOf="@+id/txtMetabolismo"
+                app:layout_constraintTop_toBottomOf="@+id/txtMetabolismo" />
+
+            <EditText
+                android:id="@+id/txtIdadeCorporal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="em anos"
+                android:inputType="numberDecimal"
+                app:layout_constraintEnd_toEndOf="@+id/textView10"
+                app:layout_constraintStart_toStartOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <Button
+                android:id="@+id/btSalvar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#3F51B5"
+                android:text="Salvar"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/txtIdadeCorporal"
+                app:layout_constraintStart_toStartOf="@+id/txtIdadeCorporal"
+                app:layout_constraintTop_toBottomOf="@+id/txtIdadeCorporal" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
